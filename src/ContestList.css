@@ -72,3 +72,14 @@ body {
     background-color: #2e7d32;
   }
   
+  .loading-state, .error-state {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+  
+  .error-state p {
+    color: #ff5252;
+    margin-bottom: 20px;
+  }
