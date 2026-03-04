@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Codeforces Div 2 Contests Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, fast, and production-ready React web application to track your progress in Codeforces Division 2 contests. It lists the 100 most recent Div. 2 contests and allows you to enter your Codeforces handle to instantly see which problems (A, B, C, D) you have successfully solved.
 
-## Available Scripts
+## 🌟 How This Can Be Helpful
 
-In the project directory, you can run:
+This tool was designed specifically for competitive programmers who focus on Codeforces Division 2 contests to improve their rating and problem-solving skills. 
 
-### `npm start`
+- **Targeted Upsolving**: Instantly identify which problems you missed in past contests. Instead of scrolling through Codeforces pages, you get a clean matrix showing exactly what you need to work on.
+- **Visual Progress Tracking**: Seeing a grid of green, solved problems is highly motivating. You can use this to set specific goals (e.g., "I want to make sure I've solved every A and B problem from the last 20 contests").
+- **Time Saving**: Fetches your submissions and maps them to recent contests in seconds, giving you a top-down view of your performance instantly.
+- **Seamless Experience**: Remembers your handle locally so you don't have to re-enter it every time you want to check your progress.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Live Data**: Fetches real-time data from the official [Codeforces API](https://codeforces.com/apiHelp).
+- **Production Grade Codebase**: Written entirely in TypeScript for reliability, with properly abstracted API layers.
+- **Modern UI Feedback**: Interactive loading states, clean error handling, and beautiful modern toast notifications via [Sonner](https://sonner.emilkowal.ski/).
+- **Persistent State**: Automatically remembers your Codeforces handle on return visits using `localStorage`.
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd codeforces-div2-contests
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run eject`
+The app will be running at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Building for Production
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To create an optimized production build, run:
+```bash
+npm run build
+```
+The optimized files will be generated in the `build` directory, ready to be deployed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React** (Bootstrapped with Create React App)
+- **TypeScript**
+- **Axios** (Data fetching)
+- **Sonner** (Toast notifications)
+- **CSS** (Custom styling)
